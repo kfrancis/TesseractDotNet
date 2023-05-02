@@ -1,108 +1,108 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<PropertyGroup>
-		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-		<ProductVersion>8.0.30703</ProductVersion>
-		<SchemaVersion>2.0</SchemaVersion>
-		<ProjectGuid>{D3247BC7-3F9B-4753-AF50-AC20F0A5C320}</ProjectGuid>
-		<ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-		<TemplateGuid>{9ef11e43-1701-4396-8835-8392d57abb70}</TemplateGuid>
-		<OutputType>Library</OutputType>
-		<AppDesignerFolder>Properties</AppDesignerFolder>
-		<RootNamespace>Tesseract.Xamarin.Droid</RootNamespace>
-		<AssemblyName>Tesseract.Xamarin.Droid</AssemblyName>
-		<FileAlignment>512</FileAlignment>
-		<Deterministic>True</Deterministic>
-		<AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
-		<GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-		<AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
-		<TargetFrameworkVersion>v13.0</TargetFrameworkVersion>
-		<AndroidUseAapt2>true</AndroidUseAapt2>
-		<LangVersion>latest</LangVersion>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<EmbedAllSources>true</EmbedAllSources>
-		<EmbedUntrackedSources>true</EmbedUntrackedSources>
-	</PropertyGroup>
-	<PropertyGroup>
-		<PackageId>Xamarin.Tesseract2</PackageId>
-		<Company>Clinical Support Systems</Company>
-		<Description>(Updated) Tesseract OCR for Xamarin and Xamarin.Forms, based on halkar but ultimately grabbing from adaptech-cz for the updated Tesseract4Android</Description>
-		<Copyright>Clinical Support Systems</Copyright>
-		<PackageProjectUrl>https://github.com/kfrancis/TesseractDotNet</PackageProjectUrl>
-		<Authors>Kori Francis</Authors>
-		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageTags>xamarin xamarin.forms tesseract ocr</PackageTags>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-		<DebugSymbols>true</DebugSymbols>
-		<DebugType>embedded</DebugType>
-		<Optimize>false</Optimize>
-		<OutputPath>bin\Debug\</OutputPath>
-		<DefineConstants>DEBUG;TRACE</DefineConstants>
-		<ErrorReport>prompt</ErrorReport>
-		<WarningLevel>4</WarningLevel>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-		<Optimize>true</Optimize>
-		<DebugType>embedded</DebugType>
-		<OutputPath>bin\Release\</OutputPath>
-		<DefineConstants>TRACE</DefineConstants>
-		<ErrorReport>prompt</ErrorReport>
-		<WarningLevel>4</WarningLevel>
-	</PropertyGroup>
-	<ItemGroup>
-		<Reference Include="Microsoft.CSharp" />
-		<Reference Include="Mono.Android" />
-		<Reference Include="mscorlib" />
-		<Reference Include="System" />
-		<Reference Include="System.Core" />
-		<Reference Include="System.Xml.Linq" />
-		<Reference Include="System.Xml" />
-	</ItemGroup>
-	<ItemGroup>
-		<Compile Include="AssetsDeployment.cs" />
-		<Compile Include="Resources\Resource.designer.cs" />
-		<Compile Include="Properties\AssemblyInfo.cs" />
-		<Compile Include="TesseractApi.cs" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="..\..\README.md">
-			<Link>README.md</Link>
-			<Pack>True</Pack>
-			<PackagePath>\</PackagePath>
-		</None>
-		<None Include="..\..\version.json">
-			<Link>version.json</Link>
-		</None>
-		<None Include="Resources\AboutResources.txt" />
-	</ItemGroup>
-	<ItemGroup>
-		<PackageReference Include="Nerdbank.GitVersioning">
-			<Version>3.6.128</Version>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-			<PrivateAssets>all</PrivateAssets>
-		</PackageReference>
-		<PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.2.0.5" />
-	</ItemGroup>
-	<ItemGroup>
-		<AndroidResource Include="Resources\values\strings.xml" />
-	</ItemGroup>
-	<ItemGroup>
-		<Folder Include="Resources\drawable\" />
-	</ItemGroup>
-	<ItemGroup>
-		<ProjectReference Include="..\Tesseract.XamBinding.Droid\Tesseract.XamBinding.Droid.csproj">
-			<Project>{e9b613b8-a2f7-4b68-a109-38117686332b}</Project>
-			<Name>Tesseract.XamBinding.Droid</Name>
-		</ProjectReference>
-		<ProjectReference Include="..\TesseractDotNet\TesseractDotNet.csproj">
-			<Project>{868a34d7-c9ab-48fc-a155-1c73f07d19ca}</Project>
-			<Name>TesseractDotNet</Name>
-		</ProjectReference>
-	</ItemGroup>
-	<Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
-	<!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3247BC7-3F9B-4753-AF50-AC20F0A5C320}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{9ef11e43-1701-4396-8835-8392d57abb70}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tesseract.Xamarin.Droid</RootNamespace>
+    <AssemblyName>Tesseract.Xamarin.Droid</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>True</Deterministic>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EmbedAllSources>true</EmbedAllSources>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageId>Xamarin.TesseractOcr</PackageId>
+    <Company>Clinical Support Systems</Company>
+    <Description>(Updated) Tesseract OCR for Xamarin and Xamarin.Forms, based on halkar but ultimately grabbing from adaptech-cz for the updated Tesseract4Android</Description>
+    <Copyright>Clinical Support Systems</Copyright>
+    <PackageProjectUrl>https://github.com/kfrancis/TesseractDotNet</PackageProjectUrl>
+    <Authors>Kori Francis</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>xamarin xamarin.forms tesseract ocr</PackageTags>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>embedded</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <DebugType>embedded</DebugType>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssetsDeployment.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TesseractApi.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Link>README.md</Link>
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\version.json">
+      <Link>version.json</Link>
+    </None>
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Nerdbank.GitVersioning">
+      <Version>3.6.128</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tesseract.XamBinding.Droid\Tesseract.XamBinding.Droid.csproj">
+      <Project>{e9b613b8-a2f7-4b68-a109-38117686332b}</Project>
+      <Name>Tesseract.XamBinding.Droid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TesseractDotNet\TesseractDotNet.csproj">
+      <Project>{868a34d7-c9ab-48fc-a155-1c73f07d19ca}</Project>
+      <Name>TesseractDotNet</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
